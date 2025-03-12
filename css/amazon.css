@@ -1,0 +1,14 @@
+*{
+    margin:0px;
+    font-family: 'Times New Roman', Times, serif;
+     border:border-box; /*kisi bhi element ka boirder uske dimensions me hi ayeg */
+}
+.navbar{
+    height:60px;
+    background-color:#0f1111 ;
+    color: white;
+}
+.logo
+{
+    background-image: url('');
+}

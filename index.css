@@ -1,0 +1,156 @@
+/* cascading style sgheet  */
+h1{
+    color: rgb(42, 87, 165);
+}
+
+body{
+    background-color: antiquewhite;
+}
+h1{
+    text-align:center;
+    text-transform: capitalize;
+}
+*{
+    font-family: 'Times New Roman', Times, serif;
+    padding:0;
+    margin: 0;
+    /* background-color: pink; */
+}
+#outer{
+    font-size: 25px;
+    height: 500px;
+    background-color: pink;
+    border-width: 2px;
+    border-style: solid;
+     border-radius:10px ;
+     padding: 2px 3px 5px 10px;
+     background-image: url('/css/cat.webp');
+    background-size: contain;
+}
+#inner{
+    font-size: 10px;
+    background-color: aliceblue;
+    height: 50px;
+    width:230px;
+    margin-left: 100px;
+    border-width: 2px;
+    border-style: solid;
+}
+#test{
+    height:100px;
+    width:100px;
+    background-color:green ;
+    border-radius: 50%;
+    margin:100px;
+    padding:100px;
+}
+#navbar{
+    height:60px;
+    background-color: black;
+    border:4px solid white;
+    color: white;
+    
+}
+button{
+    background-color: #f08804;
+}
+a{
+    margin-right: 200px;
+}
+#random{
+    height:100px;
+    width:100px;
+    /* background-image: url('/img/balidan_badge.jpg'); */
+    position:relative;
+    
+    background-color: #f08804;
+    /* background-size: contain; */
+   /* animation-name: myName;
+     animation-duration:3s ;
+    animation-timing-function: ease-in;
+    animation-delay:1s;
+    animation-iteration-count: 2;
+    animation-direction: alternate; */
+    animation: myName 4s ease-in 1s 3 alternate;
+
+
+}
+
+    /* minimum is width pe ane kuch crazy ho jaye */
+
+@media(min-width:600px)
+{
+    #random{
+        background-color: blue;
+    }
+}
+@media (min-width: 400px) and (max-width: 599px) {
+    #random {
+        background-color: rgb(255, 0, 225);
+    }
+}
+/* for chages in state of an element we use transform or transition property */
+/* we use pseudo class for this purpose  */
+#random:hover{
+    background-color: azure;
+    color:rgb(22, 34, 162);
+    transition:all 1s ease-in ;
+    /* transform:rotate(45deg)  */
+    /* rotate: x 50deg; */
+    /* ab isme x y and z axis ke along bhi rotate hota haui */
+     transform:scale(1,1) ;
+     /* first value x axis ke liye hoti hgai and second y aaxis ke liye */
+     /* transform:translate(20px,20px); */
+     /* skew is combination of properties and iska matlab dono atraaf se pakad ke kheech dena */
+     transform:skew(30deg)
+}
+#random:active{
+    background-color: rgb(150, 113, 12);
+    color:rgb(111, 121, 231);
+    transform:rotate();
+}
+/* keyfra tells us what will be our starting and ending state */
+@keyframes myName{
+    /* from{background-color: #f08804;}
+    to{background-color: rgb(198, 32, 145);}
+    from{font-size:20px;}
+    to{font-size:40px;}
+    from{left:0px;}
+    to{left:200px} */
+    /* we can use % symbol for the naimation to apply animaton from any point in the animation; */
+
+    0%{background-color: #f08804;}
+    100%{background-color: rgb(198, 32, 145);}
+    0%{font-size:20px;}
+    100%{font-size:40px;}
+    50%{
+        background-color: blanchedalmond;
+    }
+    0%{left:0px;}
+    100%{left:200px}
+}
+/* actual animatuion ko apply karne ke liye we use animation properties;
+ */
+ .loader{
+    height: 200px;
+    width:200PX;
+    border-radius: 50%;
+    border: 20px solid #ffe660;
+    border-top:20px solid #4ecdc4 ;
+    /* animation-name: spin;
+    animation-duration: 1s;
+    animation-timing-function: normal;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction:normal; */
+    animation: spin 1s ease-in-out 0s infinite normal;
+
+ }
+ @keyframes spin{
+    from{
+        transform:rotate( 0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+ }
