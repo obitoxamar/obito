@@ -2,53 +2,105 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/style.css">
+   
+    <title>BLUEBIRD: CARRIER OF YOUR PROBLEMS</title>
 </head>
 <body>
-    
-    <a href="/hello.html" target="_main">go to hello</a> 
-    <!-- taregt use kiya jata hau traki wo naye tab me khule  --><br/>
-    <a href="/hello.html" target="_main">
-        <img src="/img/itachi uchiha.jpg" alt="google" height='100'/></a>
+    <nav class="navbar background h-nav">
+    <ul class="navlist v-class">
+    <div class="logo"><img src="img/bluebird.jpeg" alt="logo"></div>
+    <li> <a href="#home">Home</a> </li>
+    <li> <a href="#about">About</a> </li>
+   
+    <li> <a href="#contact">ADD QUERY</a> </li>
+     </ul>
+     <div class="rightnav v-class">
+     <input type="text " name = "search" id= "search">
+     <button class="btn btn-sm">Search</button>
+     
+    </div>
+    <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    </nav>
+     <section class="background FirstSection">
+      <div class="box-main" id="home">
+        <div class="firsthalf">
+            <p class="text-big">It feels good to work for the right cause</p>
+            <p class="text-small">Let's start making changes in the world. </p>
+            <div class="button">
+                <button class="btn">START BY RAISING YOUR VOICE</button>
+            </div>
+        </div>
+        <div class="secondhalf">
+            <img src="img/yellowleaf.jpg" alt="laptop image">
+        </div>
 
+     </div>
 
-        <table style="border-radius: 2; border-color: black;">
-            <caption>Student details</caption>
-            <tr colspan="2">
-                <th>Name</th>
-              
-            </tr>
-            <tr>
-                <td>Amarnath</td>
-                <td>29</td>
-            </tr>
-        </table>
-        <form action="/action.php">
+     </section>
+     <section class="secRight" id="about">
+         <div class="paras">
+      <p class="sectiontag text-big">THE END OF ALL OF YOUR WORRIES IS HERE :)</p>  
+     
+      <p class="sectionsub tag text-small">ABOUT US:</p>
+     
 
-<input type="text" placeholder="Enter the name"/>
-<input type="password" placeholder="xy"/>
-<label for="101"> <input type="radio" value="math" name="subject" id="101" >maths
-</label>
-<label for="102"> <input type="radio" value="maphy" name="subject" id="102" >maphy
-</label><label for="103"> <input type="radio" value="cs" name="subject" id="103" >cs
-</label><br/>
-<textarea name="feedback" id="101" placeholder="please give me " rows="5"></textarea>
-<br/>
-select your city <select>
-    
-    <option value="pune">Pune</option>
-    <option value="mumbai">Mumbai</option>
-</select><br/>
-<input type="submit" value="submit"/>
-        </form>
+      <p class="sectionsub tag text-small">  The primary reason to chose this particular topic was->
+        Despite the fact that our country has progressed significantly, there are still numerous issues in our society that go unnoticed. People who are experiencing these issues have a difficult time contacting the appropriate authority to make a complaint. As a result, people assume that nothing will happen and that their problems will remain unsolved.,
+        
+      </p>
+         </div> 
+      <div class="thumbnail">
+          <img src="img/nature1.jpeg" alt="laptop image" class="imgfluid">
+      </div> 
+ 
 
-<!-- iframe to show website inside website -->
+</section>
+ 
+<section class="secLeft">
+    <div class="paras">
+ <p class="sectiontag text-big">THE WORLD IS A BEAUTIFUL PLACE WITH BEAUTIFUL PEOPLE FOR EXAMPLE , LOOK AT YOU :)</p>  
+ 
+ <p class="sectionsub tag text-small">_____________________________________________________</p>
+ <p class="sectionsub tag text-small">The project will make a huge contribution to the society .
+    People will gave to worry a little less about some critical problems that exixts in the  society and they can freely put up their problems without any hesitation or getting confused whom to contact.
+    It will also be helpful for people in rural areas where problems like lack of water for irrigation , poor electricity , handpump malfunction are common…
+    The main objective of the project will be development of a website where people can register themselves and can put any query or complain about the society and we will refer there query directly to the concerned authority.
+    </p>
 
-<!-- <iframe width="560" height="315" src="https://www.wikipedia.org/"></iframe><br/> -->
-my video
-<!-- <video src="/css/VID_513990331_044320_511.mp4" height="500" controls loops alt="video"></video> -->
- <h1>Hellloooo</h1>
+     
+ </p>
+    </div> 
+ <div class="thumbnail">
+     <img src="img/nature2.jpg" alt="laptop image" class="imgfluid">
+
+</div>
+
+</section>
+<hr>
+
+<section class="contact" id="contact">
+    <h2 class="text-center">GO AHEAD WITH YOUR QUERY</h2>
+    <div class = form action="connec.php" method="post`">
+        <input class= "form-input" type="text" name="name" id="name" placeholder="Enter your name">
+        <input class= "form-input"  type="text" name="phone" id="phone" placeholder="Enter your phone number">
+        <input class= "form-input"  type="email" name="email" id="email" placeholder="Enter your email">
+        <textarea class= "form-input" name="text" id="text" cols="30" rows="10" placeholder="Ellaborate your concern"></textarea>
+        <input type="submit" name="Submit" id="Submit" value="Submit">
+    </div>
+</section>
+<footer class= "background">
+    <p class="text-footer">
+        Copyright &copy; 2027 - All rights reserved.
+    </p>
+
+</footer>
+<script src="js/resp.js"></script>     
 </body>
-</html>  
+</html>
